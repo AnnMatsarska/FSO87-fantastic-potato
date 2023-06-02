@@ -34,8 +34,43 @@
 // значення '1', то у змінну result запишемо 'зима', якщо має значення
 // '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
 
+// const num = 4;
+// let result;
+
+// switch(num){
+
+//     case 1:
+//         result = "зима";
+//         break;
+
+//     case 2:
+//         result = "весна";
+//         break;
+    
+//     case 3:
+//         result = "літо";
+//         break;
+
+//     case 4:
+//         result = "осінь";
+//         break;
+
+//         default:
+//         result = "Такої пори року немає";
+// }
+
+// console.log(result);
+
 //TODO: 4 ===================================
 // скористаємося циклом while та виведіть у консоль числа від 0 до 50
+
+
+// let value = 0;
+
+// while (value <= 50) {
+//     console.log(value);
+//     value += 1;
+// }
 
 //TODO: 5 ===================================
 //Використовуючи конструкцію if...else,
@@ -46,6 +81,11 @@
 //інакше відобразити: "Не знаєте? ECMAScript!"
 
 // const question = prompt('Яка «офіційна» назва JavaScript?').toLowerCase();
+
+// const CORRECT_VALUE = "ECMAScript";
+
+// question === CORRECT_VALUE.toLowerCase() ? alert("Вірно!") : alert("Не знаєте? ECMAScript!");
+
 
 //TODO: 6 ===================================
 // Напишіть програму, яка отримає від користувача
