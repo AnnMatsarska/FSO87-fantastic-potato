@@ -203,22 +203,47 @@ const filmoteka = [
 // Замініть значення "Блюз" на "Класика".
 // Видалить перший елемент масиву і виведіть його в консоль.
 // Вставте «Реп» і «Реггі» на початок масиву.
+// const styles = ['Джаз', 'Блюз'];
+// styles.push('Рок-н-рол');
+// console.log(styles);
+// styles.splice(1, 1, 'Класика');
+// console.log(styles);
+// console.log(styles.shift());
+// console.log(styles.unshift('Реп', 'Реггі'));
+// console.log(styles);
 
 //TODO:============task-5==============
 // Напишіть функцію min(a, b), яка повертає
 // менше з чисел a, b
 // Потрібно додати перевірку, що функція отримує числа
 
-//? Answer
+// const min = function (a, b) {
+//   if (typeof a !== 'number' && typeof b !== 'number') {
+//     return
+    
+//   }
+//   return a < b ? a : b;
+// }
 
-//?
+// //? Answer
 
-// const result = min(10, 5);
+// //?
+
+// const result = min(10, 25);
 // console.log(result); // 5
 
 //TODO:=============task-6=================
 // напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
 // const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+// const sumAdjacentNumbers = function (array) {
+//   const newArray = [];
+//   for (let i = 0; i < array.length-1; i+=1) {
+//     newArray.push(array[i]+array[i+1])
+    
+//   }
+// return newArray
+// }
 
 //? Answer
 
