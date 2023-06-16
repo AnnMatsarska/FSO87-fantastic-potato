@@ -25,19 +25,19 @@
 //аргументів і повертає їхнє середнє значення.
 //Додати перевірку, що аргументи це числа.
 
-const calculateAverage = function(...args){
-  let total = 0;
-  let iterator = 0;
-  for (const arg of args){
-    if (typeof arg === 'number') {
-      total += arg;
-      iterator += 1;
-    }
-  }
-  return total / iterator;
-}
+// const calculateAverage = function(...args){
+//   let total = 0;
+//   let iterator = 0;
+//   for (const arg of args){
+//     if (typeof arg === 'number') {
+//       total += arg;
+//       iterator += 1;
+//     }
+//   }
+//   return total / iterator;
+// }
 
-console.log(calculateAverage(10, 10, 20, 200, 'Hello', true)); // 60
+// console.log(calculateAverage(10, 10, 20, 200, 'Hello', true)); // 60
 
 //TODO:=========task-3=================
 const filmoteka = [
@@ -113,13 +113,89 @@ const filmoteka = [
   },
 ];
 
+
+
+
+
 //? Напишіть функцію getAllTitlesOfFilms(films), яка повертає масив із усіма назвами фільмів.
+
+
+// const getAllTitlesOfFilms = function (array) {
+  
+//   const titlesOfFilms = []
+
+//   for (const {title} of array) {
+//     titlesOfFilms.push(title)
+//   }
+
+// return titlesOfFilms
+// }
+// console.log(getAllTitlesOfFilms(filmoteka));
+
 
 //? Напишіть функцію findFilmByName(films, filmTitle), яка шукає фільм за назвою.
 
+
+// const findFilmByName = function (films, filmTitle) {
+  
+//   for (const {title} of films) {
+//     if (title === filmTitle) {
+//     return title
+//   }
+
+// return `${filmTitle} не знайдено!`
+// }
+// }
+// console.log(findFilmByName(filmoteka, 'Duna'));
+
+
+// var 2
+// const findFilmByName = function (films, filmTitle) {
+  
+//   for (const film of films) {
+//     if (film.title === filmTitle) {
+//     return film
+//   }
+
+// return `${filmTitle} не знайдено!`
+// }
+// }
+// console.log(findFilmByName(filmoteka, 'Duna'));
+
+
 //? Напишіть функцію getAdultFilms(films), яка повертає масив усіх дорослих фільмів.
 
+
+// const getAdultFilms = function (films) {
+  
+//   const adultsFilms = []
+  
+//   for (const film of films) {
+//     if (film.adult) {
+//       adultsFilms.push(film)
+//     }
+//   }
+// return adultsFilms
+// }
+
+// console.log(getAdultFilms(filmoteka));
 //? Напишіть функцію getNotAdultFilms(films), яка повертає масив усіх фільмів без обмеження.
+
+
+
+// const getNotAdultFilms = function (films) {
+  
+//   const adultsFilms = []
+  
+//   for (const film of films) {
+//     if (!film.adult) {
+//       adultsFilms.push(film)
+//     }
+//   }
+// return adultsFilms
+// }
+// console.log(getNotAdultFilms(filmoteka));
+
 
 //TODO:============task-4===============
 // Створіть масив styles з елементами «Джаз» та «Блюз».
