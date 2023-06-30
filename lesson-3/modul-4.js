@@ -101,8 +101,13 @@
 //TODO:=========task-8=================
 // ? Знайдіть перше непарне число
 
-// const numbers = [2, 1, 6, 8, 9, 10, 12]
+// const numbers = [5, 2, 1, 6, 8,  9, 10, 12]
 
+// console.log(numbers.find((number) => number % 2 !== 0));
+
+// console.log(numbers.filter((number) => number %2 !== 0));
+
+// console.log(numbers);
 //TODO:===========task-9===============
 
 const users = [
@@ -195,8 +200,13 @@ const users = [
 //TODO:==========================
 // Отримати масив імен всіх користувачів (поле name).
 
+// console.log(users.map(({name}) => name));
+
 //TODO:==========================
 // Отримати масив об'єктів користувачів за кольором очей (eyeColor).
+// function getUsersByColor(array, eyeColor) {
+//    return array.filter((user) => user.eyeColor === eyeColor);
+// }
 
 // console.log(getUsersByColor(users, 'brown'))
 // console.log(getUsersByColor(users, 'blue')) // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
@@ -204,7 +214,17 @@ const users = [
 //TODO:==========================
 // Отримати масив імен користувачів за статтю (поле gender)
 
-// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+// function getUsersWithGender(array, gen) {
+//     return array.reduce((acc, user) => {
+//         if (user.gender === gen) {
+//         acc.push(user.name)
+//     }
+// return acc
+// }, [])
+
+// }
+
+// console.log(getUsersWithGender(users, 'female')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 //TODO:==========================
 // Отримати масив тільки неактивних користувачів (поле isActive).
@@ -225,11 +245,20 @@ const users = [
 //TODO:==========================
 // Масив імен всіх користувачів, у яких є товарищь із зазначеним ім'ям.
 
+// function getUsersWithFriend(array, userName) {
+//     return array.filter((user)=> user.friends.includes(userName)).map((user)=>user.name)
+// }
+
 // console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 // console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
 
 //TODO:==========================
 // Масив імен (поле name) людей, відсортованих залежно кількості їх друзів (поле friends)
+
+// function getNamesSortedByFriendsCount(array) {
+    
+//     return [...array].sort((a, b) => a.friends.length - b.friends.length).map((user)=>user.name)
+// }
 
 // console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
@@ -256,6 +285,12 @@ const users = [
 //     Одеса: new Date('2023-07-15'),
 //     Хмельницький: new Date('2020-04-18'),
 //     Харків: new Date('2023-07-10'),
+// }
+
+// function concertsToArray(obj) {
+    
+//     return Object.keys(obj).filter((city)=> obj[city] > new Date()).sort((a,b)=> obj[a]-obj[b])
+//     // return Object.values(obj).filter((date)=> date> new Date())
 // }
 
 // console.log(concertsToArray(concerts))
