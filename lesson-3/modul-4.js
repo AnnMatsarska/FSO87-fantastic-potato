@@ -28,23 +28,36 @@
 //showProduct(product) - коллбек приймаючий об'єкт
 //продукту і логірующий їх у консоль
 
-function makeProduct(name, price, callback){
-const newObj = {
-    id: Date.now(),
-    name, 
-    price,
-};
-callback(newObj)
-}
-function showProduct(product){
-console.log(`Товар з id: ${product.id}, ${product.name},
- ціна: ${product.price}$`);
-}
-makeProduct('tomato', 2, showProduct)
+// function makeProduct(name, price, callback){
+// const newObj = {
+//     id: Date.now(),
+//     name, 
+//     price,
+// };
+// callback(newObj)
+// }
+// function showProduct(product){
+// console.log(`Товар з id: ${product.id}, ${product.name},
+//  ціна: ${product.price}$`);
+// }
+// makeProduct('tomato', 2, showProduct)
 //TODO:=================03=============================
 // Напишіть функцію makeShef(shefName), яка повертає функцію
 // makeDish(dish), що пам'ятає ім'я шефа при її виклику
 // Функція makeDish має логірувати "<shef> is cooking <dish>"
+// Замикання
+
+
+// function makeShef(shefName){
+//    return function makeDish(dish, drink){
+//     console.log(`${shefName} is cooking ${dish} with ${drink}`);
+//    }
+// }
+// const shef1 = makeShef("Vitalii");
+// const shef2 = makeShef("Dmytro");
+// shef1("pasta", "wine");
+// shef2("meat", "beer");
+
 
 //TODO:=================04=============================
 //Напишіть функцію each(array, callback), яка
@@ -54,7 +67,20 @@ makeProduct('tomato', 2, showProduct)
 //якого будуть результати виклику callback
 //callback функції повинна множити елементи на 2
 
-const array = [3, 5, 6, 34, 8, 83, 12, 34]
+// const numbers = [3, 5, 6, 34, 8, 83, 12, 34]
+
+// function earch(array, callback){
+// const newArray = [];
+// for (const number of array) {
+//    newArray.push(callback(number))
+// }
+// return newArray;
+// }
+
+// console.log(earch(numbers, (numb) =>  numb * 2));
+
+// Анонімна колбек функція
+
 
 //TODO:==================05============================
 //Напишіть функцію makeCounter, яка повертає іншу
