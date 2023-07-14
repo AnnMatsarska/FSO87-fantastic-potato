@@ -16,3 +16,20 @@
 //   }
 //   alert("Введіть текст");
 // }
+//TODO:====================02==========================
+// Після натискання на кнопку "SWAP ME" здійснюється обмін вмістом між двома інпутами. Можете натискати на неї кілька разів або вручну змінити вміст інпутів.
+
+// const ref = {
+//     inputLeft: document.querySelector(".js-left-swap-input"),
+//     inputRight: document.querySelector(".js-right-swap-input"),
+//     showBtn: document.querySelector(".js-swap-button")
+// }
+
+// ref.showBtn.addEventListener("click", onBtnClick);
+
+// function onBtnClick() {
+//     const defaultValue = ref.inputLeft.value
+
+//     ref.inputLeft.value = ref.inputRight.value
+//     ref.inputRight.value = defaultValue
+// }
