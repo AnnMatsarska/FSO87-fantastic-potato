@@ -81,5 +81,30 @@
 
 // containerEl.append(ulEl)
 
-// }   
+// }
 
+//TODO:====================05==========================
+// const array = ['js', 'css', 'html', 'react'];
+// const containerEl = document.querySelector('.js-list')
+
+// function createItem(content) {
+//     const liEl = document.createElement('li');
+//     liEl.textContent = content;
+//     liEl.classList.add('item');
+//     return liEl;
+// }
+
+// const markup = array.map(createItem);
+
+// containerEl.append(...markup);
+
+//TODO:====================06==========================
+
+const inputEl = document.querySelector('.js-input');
+const spanEl = document.querySelector('.js-span');
+
+inputEl.addEventListener('input', onInputChange)
+
+function onInputChange() {
+    spanEl.textContent = inputEl.value || 'anonymus';
+}
