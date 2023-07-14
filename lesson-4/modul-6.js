@@ -54,3 +54,32 @@
 //   ref.input.type = 'password';
 //   ref.btn.textContent = 'Розкрити';
 // }
+
+//TODO:====================04==========================
+// Написати функцію, яка буде створювати список подій клавіатури event.key та event.code
+// Додати класи на список eventList, на елементи eventCode та eventKey
+
+// const containerEl = document.querySelector('.eventThumb')
+
+// document.addEventListener('keydown', onKeyClick)
+// function onKeyClick ({code, key}) {
+// const markup =    `
+// <ul class="eventList">
+//   <li class="eventKey"><b>Key</b>: ${key}</li>
+//   <li class="eventCode"><b>Code</b>: ${code}</li>
+// </ul>
+// `;
+// containerEl.insertAdjacentHTML('afterbegin', markup)
+
+// const ulEl = document.createElement ('ul');
+// const liEl = document.createElement ('li');
+// const liEl1 = document.createElement ('li');
+// ulEl.appendChild (liEl);
+// ulEl.appendChild (liEl1);
+// liEl.textContent = `key: ${key}`;
+// liEl1.textContent = `code: ${code}`;
+
+// containerEl.append(ulEl)
+
+// }   
+
