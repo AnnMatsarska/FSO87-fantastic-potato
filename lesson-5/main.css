@@ -61,3 +61,30 @@ ul {
 .panel.active {
   display: block;
 }
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eee;
+  margin-top: 1em;
+  padding-top: 0.5em;
+  list-style: none;
+}
+
+.pagination__item {
+  display: block;
+  margin: 0 0.25rem;
+  padding: 0.5em 1em;
+  border: 1px solid #999;
+  border-radius: 0.5em;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination__item.active {
+  background-color: #bfff48;
+  color: #000000;
+}
