@@ -155,3 +155,41 @@ function closeModalWindow() {
   
   |============================
 */
+
+
+
+// const input = document.querySelector("#input");
+// input.addEventListener("input", _.throttle((evt) => console.log(evt.target.value), 1000))
+
+// 2. Theme switcher
+// Використовуй html з файлу themeSwitch.html
+// Використовуй local storage для зберігання вибраної теми (dark / light)
+const themeSwitcher = document.getElementById('theme-switch');
+const bodyEl = document.body
+themeSwitcher.addEventListener("click", onCheckBoxChange)
+const LOCAL_KEY = "theme-body";
+
+// light theme is default, that's why themeSwitcher is unchecked
+themeSwitcher.checked = false;
+
+function onCheckBoxChange(evt) {
+  if (evt.target.checked) {
+    bodyEl.classList.replace("light", "dark")
+    localStorage.setItem(LOCAL_KEY, "dark")
+  } else {
+    bodyEl.classList.replace("dark", "light")
+    localStorage.setItem(LOCAL_KEY, "light")
+  }
+}
+
+(function setThemeOnLoad() {
+  const lsData = localStorage.getItem(LOCAL_KEY)
+  if(lsData === "dark") {
+    bodyEl.classList.replace("light", "dark")
+    themeSwitcher.checked = true;
+  } else {
+    bodyEl.classList.replace("dark", "light")
+    themeSwitcher.checked = false;
+  }
+})()
+// setThemeOnLoad()
